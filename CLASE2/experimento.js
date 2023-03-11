@@ -84,17 +84,17 @@
 // 5. Crear un programa que pida al usuario tres números y muestre en pantalla la
 // suma de los dos mayores.
 
-let primero = parseInt(prompt("Introduce un primer número"));
-let segundo = parseInt(prompt("Introduce un segundo número"));
-let tercero = parseInt(prompt("Introduce un tercer número"));
+// let primero = parseInt(prompt("Introduce un primer número"));
+// let segundo = parseInt(prompt("Introduce un segundo número"));
+// let tercero = parseInt(prompt("Introduce un tercer número"));
 
-let mayor1;
-let mayor2;
-let menor;
+// let mayor1;
+// let mayor2;
+// let menor;
 
-if (primero > segundo && primero > tercero){
-    mayor1 = primero;
-}
+// if (primero > segundo && primero > tercero && segundo > tercero){
+//     mayor1 = primero;
+// }
 
 
 
