@@ -7,5 +7,5 @@
 
 let vSalir = confirm("¿Vas a salir de tu casa?");
 
-vSalir === true ? alert("Chequeá el pronóstico del tiempo antes de salir") : alert("Que bueno que te quedes. Va a llover mucho hoy");
+vSalir === true ? alert("Chequea el pronóstico del tiempo antes de salir") : alert("Que bueno que te quedes. Va a llover mucho hoy");
 
