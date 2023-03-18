@@ -42,8 +42,8 @@
 // Utilizando un bucle deberás generar un array con los resultados.
 // a. Creá la variable base que contendrá un número. Define también una variable de resultados que sea un array vacío.
 
-let numero = 2;
-let resultados = [];
+// let numero = 2;
+// let resultados = [];
 
 
 // b. Crea un ciclo que recorra desde el 1 al 10.
