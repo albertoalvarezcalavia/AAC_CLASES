@@ -9,16 +9,17 @@
 
 // let misMascotas = {
 //     nombre: 'Roger',
-//     especie: 'bichon maltes',
+//     especie: 'Pastor Alemán',
 //     edad: '5',
-//     comidaFavorita: 'pienso',
-//     color: 'marron',
+//     comidaFavorita: 'Bacon',
+//     color: 'Marron',
 //     };
 //     console.log(misMascotas);
 
 
 
-
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 2. Implementa el método "presentar()" en el objeto "misMascotas" que, al ser invocado, retorne un string como este: 
 // "Hola, mi mascota se llama NOMBRE, es un(a) ESPECIE y tiene EDAD años". Utiliza template literals para armar el
 // string. 
@@ -26,18 +27,20 @@
 
 // let misMascotas = {
 //     nombre: 'Roger',
-//     especie: 'bichon maltes',
+//     especie: 'Pastor Alemán',
 //     edad: '5',
-//     comidaFavorita: 'pienso',
-//     color: 'marron',
+//     comidaFavorita: 'Bacon',
+//     color: 'Marron',
 //     presentar() {
-//     return ('Hola, mi mascota se llama ' + this.nombre + ' es un(a) ' + this.especie + ' y tiene ' + this.edad + ' años.');
+//     return (`Hola, mi mascota se llama ${this.nombre}, es un(a) ${this.especie} y tiene ${this.edad} años.`);
 //      }
 //     };
 //     console.log(misMascotas.presentar())
 
 
 
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 3. Creá un objeto literal misDatos con tu información en sus propiedades:
 // ● nombre
 // ● apellido
@@ -49,12 +52,15 @@
 //     nombre: 'Alberto',
 //     apellido: 'Alvarez',
 //     dni: '2536547P',
-//     comidaFavorita: 'chocolate',
+//     comidaFavorita: 'Chocolate',
 //     edad: '43',
 // }
 // console.log(misDatos);
 
 
+
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 4. Implementar el método saludar() en el objeto misDatos que al ser invocado retorne un string así: 
 // "Hola mi nombre es NOMBRE APELLIDO y tengo EDAD años". Armá el string usando template literals que vimos en la 1ª clase
 // de javascript. 
@@ -67,12 +73,15 @@
 //     comidaFavorita: 'Chocolate',
 //     edad: '43',
 //     saludar() {
-//     return ('Hola mi nombre es ' + this.nombre + ' ' + this.apellido + ' y tengo ' + this.edad + ' años.');
+//     return (`Hola mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} años.`);
 //      }
 //     };
 //     console.log(misDatos.saludar())
 
 
+
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 5. Vamos a crear un auto como objeto literal con las propiedades:
 // ● marca
 // ● modelo
@@ -88,10 +97,18 @@
 // Recordá usar una sola vez console.log() para ver la posición final del auto. ¿Qué deberías indicar dentro de los paréntesis 
 // de console.log() para ver la posición final del auto?
 
+let coche = {
+    marca: 'Ford',
+    modelo: 'Focus',
+    anio: 2018,
+    color: 'Rojo',
+    posicion: 0,
+}
 
 
 
-
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 6. Creá una nueva variable “nuevoAuto” con las mismas propiedades que la anterior y reemplazá a los métodos avanzar(n) y 
 // retroceder(n) por un único método moverse(n) que va a recibir como parámetro un número positivo o negativo y modificará la 
 // posición del auto la cantidad de pasos necesarios. 
@@ -99,7 +116,8 @@
 
 
 
-
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 7. Batalla de superhéroes. Vamos a poner en juego todo lo aprendido.
 // Creá:
 // un objeto literal ironMan con las siguientes propiedades y métodos:
@@ -127,6 +145,8 @@
 
 
 
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 8. Crea un objeto literal producto con las siguientes propiedades:
 // ● nombre
 // ● precio
