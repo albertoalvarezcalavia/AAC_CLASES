@@ -10,16 +10,16 @@
 // console.log(rectangulo(2,4));
 
 
-
 // b. Crear una función triangulo que reciba como parámetro la base y la
 // altura de un triángulo y retorne el área.
-
 
 // let triangulo = (base,altura) => (base * altura) / 2;
 // console.log(triangulo(50,5));
 
+
 // c. Crea una función largoDelArray que reciba como parámetro un array
 // y retorne la cantidad de elementos que contiene.
+
 // let arrayNum = [1,2,3,4,5,6];
 
 // let largoDelArray = (array) => arrayNum.length;
@@ -33,7 +33,6 @@
 
 // let cantidadDeLetras = (palabra) => palabra.length;
 // console.log(cantidadDeLetras(palabra));
-
 
 
 // e. Crea una función dolarHoy que reciba como parámetro un precio en
@@ -53,7 +52,6 @@
 // console.log(precioFinal(3));
 
 
-
 // g. Crea una función mitad que reciba un número como parámetro y
 // devuelva su mitad. Tené en cuenta que el operador de división en JavaScript es “ / ”.
 
@@ -71,6 +69,8 @@
 
 
 
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 2. Realiza lo siguiente:
 // Hacé una calculadora básica para que calcule automáticamente con 2 números recibidos como parámetro y una operación. 
 // Los parámetros serán 3: num1, num2, operación.
@@ -98,7 +98,8 @@
 
 
 
-
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 3. Creá 4 funciones que deberán tomar siempre 2 números como parámetros (num1 y num2). Sugerimos que se llamen:
 // sumar
 // multiplicar
@@ -117,71 +118,158 @@
 
 
 
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 4. Crea una función que reciba un parámetro, un dni, y devuelva la letra del mismo. Si el dni pasado tiene algún 
 // error devolverá “”.
 
 // let letra ="TRWAGMYFPDXBNJZSQVHLCKE"
 
-// let dniLetra = (dni,) => {
+// let dniLetra = (dni) => {
 //     let idLetra = dni % 23;
 //     return letra[idLetra];
 // };
-// console.log(dniLetra(40050483));
+// console.log(dniLetra(2912510));
 
 
+
+// ########################################################################################################################################
+// ########################################################################################################################################
 // 5. Crea una función que reciba un texto y lo devuelva al revés
+
 // let texto = 'Hola caracola';
 // let arrayTexto = texto.split('');
-
 // let textoReves = (texto) => texto.reverse().join('');
 // console.log(textoReves(arrayTexto));
 
 
 // const invertirTexto = texto => texto.split('').reverse().join('');
-// console.log(invertirTexto("CASA"));
-
-
-// 6. Crea una función que genere número entero aleatorio entre min y max, que
-// serán pasados como parámetros. Por defecto min = 1 y max = 100
-
-//let aleatorio = (n1,n2) => Math.round() * ()
+// console.log(invertirTexto("CASAmala"));
 
 
 
-// 7. Crea una función que genere 100 números aleatorios entre 1 y 1000 que no
-// se repitan y luego muestralos por pantalla
+// ########################################################################################################################################
+// ########################################################################################################################################
+// 6. Crea una función que genere número entero aleatorio entre min y max, que serán pasados como parámetros. 
+//    Por defecto min = 1 y max = 100
+
+// let aleatorio = (n1 = 100, n2 = 1) => Math.random() * (n1 -n2);
+// console.log(aleatorio(87, 35));
 
 
 
-// 8. Realizar un programa que, pidiendo la introducción de un número, averigüe
-// mediante una función, si dicho número que se le pase es positivo, negativo o
-// nulo. Para ello, deberá escribir en pantalla, en caso positivo, el mensaje “El
-// número es positivo”. En el caso de ser negativo escribirá “El número es
-// negativo”. Si resulta ser nulo escribirá “El número es nulo”.
+// ########################################################################################################################################
+// ########################################################################################################################################
+// 7. Crea una función que genere 100 números aleatorios entre 1 y 1000 que no se repitan y luego muestralos por pantalla
+
+// let cienNumAleat = () => {
+//     let numAleat = [];
+//     let num = 0;
+
+//     for(let i = 0; i < 100; i++){
+//         do {
+//             num = Math.floor(Math.random() * 1000);
+//             //console.log(num);
+//         } while (numAleat.includes(num));
+
+//         numAleat.push(num);
+//     }
+
+//     console.log(numAleat);
+// };
+
+// cienNumAleat();
 
 
 
-// 9. Realizar un programa que pida la introducción de un número, y que mediante
-// una función, averigüe si ese número es primo, indicándose con mensajes que
-// se produzcan en el cuerpo de la función principal.
+// ########################################################################################################################################
+// ########################################################################################################################################
+// 8. Realizar un programa que, pidiendo la introducción de un número, averigüe mediante una función, si dicho número que se le pase es 
+// positivo, negativo o nulo. Para ello, deberá escribir en pantalla, en caso positivo, el mensaje “El número es positivo”. En el caso de 
+// ser negativo escribirá “El número es negativo”. Si resulta ser nulo escribirá “El número es nulo”.
+
+// let usuario = prompt("Introduzca un número (positivo, negativo o nulo)");
+// let tipoNum = (n1) => {
+//     if (Math.sign(n1) >= 0){
+//         console.log('El número es positivo');
+//     } else if (Math.sign(n1) < 0){
+//         console.log('El número es negativo');
+//     } else{
+//         console.log('El número es nulo');
+//     }
+// };
+
+// console.log(tipoNum(usuario));
 
 
 
-// 10.Imaginemos que tenemos los siguientes campos en un formulario: nombre,
-// email y comentarios. Mediante la siguientes declaraciones:
-// a. El campo de email debe ser una dirección de email válida. Se
-// considera válida si contiene un ‘@’
+// ########################################################################################################################################
+// ########################################################################################################################################
+// 9. Realizar un programa que pida la introducción de un número, y que mediante una función, averigüe si ese número es primo, 
+// indicándose con mensajes que se produzcan en el cuerpo de la función principal.
+
+// let usuario = prompt("Introduzca un número para comprobar si es un número primo, o no:");
+
+// let primo = (num) => {
+//     let resultado = 1;
+//     for (let i = 2; i < num; i++) {
+//         resultado = num % i;
+//         if (resultado == 0)
+//             break;
+//     }
+//     if(resultado == 0){
+//         console.log('El número NO es primo');
+//     } else{
+//         console.log('El número SI es primo');
+//     }
+// };
+
+// primo(usuario);
 
 
-// b. El texto introducido en el campo de comentarios no debe exceder los
-// 50 caracteres.
 
-
-// c. El password debe tener una longitud mínima de 6 caracteres, y
-// contener al menos una letra minúscula, una letra mayúscula y un
+// ########################################################################################################################################
+// ########################################################################################################################################
+// 10.Imaginemos que tenemos los siguientes campos en un formulario: nombre, email y comentarios. 
+// Mediante la siguientes declaraciones:
+// a. El campo de email debe ser una dirección de email válida. Se considera válida si contiene un ‘@’
+// b. El texto introducido en el campo de comentarios no debe exceder los 50 caracteres.
+// c. El password debe tener una longitud mínima de 6 caracteres, y contener al menos una letra minúscula, una letra mayúscula y un
 // dígito.
+// d. Realizar una función para cada campo y valide según indica.
 
+// let validarPass = (pass) => {
+//     let minusculas = 'abcdefghyjklmnñopqrstuvwxyz'.split('');
+//     let mayusculas = 'ABCDEFGHIJKLMNÑOPQSTUVVXYZ'.split('');
 
-// d. Realizar una función para cada campo y valide según indica
+//     let verificar = false;
+//     if (pass.length < 6)
+//         return false;
+//     else {
+//         for (let i = 0; i < pass.length; i++) {
+//              if (minusculas.includes(pass[i])){
+//                 verificar = true;
+//                  break;
+//              }
+//         }
 
+//         if (!verificar) {
+//             return false;
+//         } else{
+//             verificar = false;
+//             for (let i = 0; i < pass.length; i++) {
+//                 if (mayusculas.includes(pass[i])){
+//                     verificar = true;
+//                     break;
+//                 }
+//             }
 
+//             if (!verificar)
+//                 return false;
+//             else
+//                 return true;
+//         }
+//     }
+// };
+
+// console.log(validarPass('fF3456'))

@@ -138,7 +138,7 @@
 //      }
 //     return mensaje;
 // }
-// let numero = mostrarResultado(96);
+// let numero = mostrarResultado(66);
 // console.log(numero);
 
 
@@ -150,7 +150,24 @@
 // calcularPromedio. 
 // Por último, llama a la función mostrarPromedio con un array de calificaciones.
 
+// let notas = [5, 6, 3, 9, 10]
 
+// let calcularPromedio = (operacion) =>{
+//     let promedio = 0;
+//     let suma = 0;
+
+//     operacion.forEach(element => {
+//         suma += element;
+//     });
+
+//     promedio = suma / operacion.length;
+//     return promedio;
+// }
+
+// //console.log(calcularPromedio(notas))
+
+// let mostrarPromedio = operacion => console.log(`El promedio de las notas introducidas es: ${calcularPromedio(notas)}`);
+// mostrarPromedio(notas);
 
 
 
@@ -163,7 +180,15 @@
 // concatenarYOrdenar. 
 // Por último, llama a la función mostrarResultado con dos arrays de números.
 
+// let numeros1 = [10, 8, 6, 4, 2];
+// let numeros2 = [9, 7, 5, 3, 1, 0];
 
+// let concatenarYOrdenar = (a1, a2) => {
+//     let arrayFinal = [...a1, ...a2].sort((a, b) => a - b);
+//     return arrayFinal;
+// }
+
+// console.log(concatenarYOrdenar(numeros1, numeros2));
 
 
 
@@ -174,7 +199,13 @@
 // Luego, crea una función mostrarResultado que muestre en la consola del navegador el número más grande utilizando la función numeroMasGrande. 
 // Por último, llama a la función mostrarResultado con un array de números.
 
+// let numeros = [555, 3333, 444, 1000, 1500, 1250, 3333, 10000, 8765];
 
+// let numeroMasGrande = (array) => Math.max(...array);
+// console.log(numeroMasGrande(numeros));
+
+// let mostrarResultado = (array) => console.log(`El número más grande es el: ${numeroMasGrande(array)}`);
+// mostrarResultado(numeros);
 
 
 
@@ -186,4 +217,21 @@
 // Luego, crea una función mostrarResultado que muestre en la consola del navegador el array resultante utilizando la función filtrarPalabras. 
 // Por último, llama a la función mostrarResultado con un array de palabras y una longitud mínima.
 
+// let palabras = ['22', '4444', '1', '666666', '55555', '333', '7777777', '999999999', '88888888', '0000000000']
+
+// let filtrarPalabras = (array, longitudMinima) => {
+//     let arrayFinal = [];
+
+//     array.forEach(element => {
+//         if (element.length >= longitudMinima)
+//         arrayFinal.push(element);
+//     });
+
+//     return arrayFinal
+// }
+
+// console.log(filtrarPalabras(palabras, 7));
+
+// let mostrarResultado = (array, longitudMinima) => filtrarPalabras(array, longitudMinima);
+// console.log(mostrarResultado(palabras, 4));
 

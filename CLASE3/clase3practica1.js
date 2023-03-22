@@ -216,11 +216,14 @@
 // Ejemplo: Si el usuario entra por teclado el número 5 el script devolverá la secuencia 0, 1, 2, 3, 4, 5
 
 // let n1 = prompt("Introduzca un número entero:");
-// console.log(n1);
-// let cuenta = [];
+// let cuenta = '';
 
 // for (let index = 0; index <= n1; index++) {
-//     cuenta.push(index);
+//     if (index != n1){
+//         cuenta += `${index}, `;
+//     } else{
+//         cuenta += `${index}`;
+//     }
 // };
 // console.log(cuenta);
 
@@ -232,6 +235,27 @@
 // el número tecleado hasta el 0.
 // Ejemplo: Si tecleo número 5 deberá mostrar 5,4,3,2,1.
 
+// let n2 = prompt("Introduzca un número entero:");
+// let cuentaAtrasCero = '';
+// let cuentaAtrasUno = '';
+
+// for (let index = n2; index >= 0; index--) {
+//     if (index == 0){
+//         cuentaAtrasCero += `${index}`;
+//     } else {
+//         cuentaAtrasCero += `${index}, `;
+//     }
+// };
+// console.log("La cuenta atrás hasta Cero es: ", cuentaAtrasCero);
+
+// for (let index = n2; index > 0; index--) {
+//     if (index == 1){
+//         cuentaAtrasUno += `${index}`;
+//     } else {
+//         cuentaAtrasUno += `${index}, `;
+//     }
+// };
+// console.log("La cuenta atrás hasta Uno es: ", cuentaAtrasUno);
 
 
 // ########################################################################################################################################
@@ -240,20 +264,28 @@
 // El resultado será de la forma "Los números enteros de 0 a n suman suma"
 // Ejemplo: Si tecleo el 5 obtendré "Los enteros enteros de 0 a n suman 15" (1+2+3+4+5).
 
-// let n1 = prompt("Introduzca un número entero:");
+// let n3 = prompt("Introduzca un número entero:");
 // let todosNum = [];
 // let suma = 0;
 
-// for (let index = 0; index <= n1; index++) {
+// for (let index = 0; index <= n3; index++) {
 //     todosNum.push(index);
 // };
 
 // for (let p of todosNum) {
 //     suma += p;
 // }
-// console.log(`Los números enteros de 0 a ${n1} suman: `, suma);
+// console.log(`Los números enteros de 0 a ${n3} suman: `, suma);
 
 
+
+// let n3 = parseInt(prompt('Introduzca un número entero:'));
+// let suma = 0;
+
+// for (let i = 1; i <= n3; i++) {
+//     suma += i;
+// }
+// console.log(`Los números enteros de 0 a ${n3} suman: `, suma);
 
 // ########################################################################################################################################
 // ########################################################################################################################################
@@ -262,6 +294,11 @@
 // Recuerda: un número es múltiplo de N es cuando al dividirlo por N el resto es 0.
 // Por ejemplo si tecleas el 14, obtendré la lista 2, 5, 8 y 11
 
+// let n4 = prompt("Introduzca un número entero:");
 
-
+// for (let index = 0; index < n4; index++) {
+//     if (index % 3 == 2){
+//         console.log(index);
+//     };
+// }
 
