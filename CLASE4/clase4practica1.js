@@ -217,7 +217,7 @@
 //         if (resultado == 0)
 //             break;
 //     }
-//     if(resultado == 0){
+//     if(resultado == 0 || num <= 1){
 //         console.log('El número NO es primo');
 //     } else{
 //         console.log('El número SI es primo');
@@ -238,17 +238,40 @@
 // dígito.
 // d. Realizar una función para cada campo y valide según indica.
 
-// let validarPass = (pass) => {
+
+// let validarEmail = (email) => {
+//     const arroba = /@/;
+//     return arroba.test(email);
+// }
+// console.log(validarEmail("alberto@correo.com")); // true
+// console.log(validarEmail("albertocorreo.com")); // false
+
+
+// const validarComen = (comen) => {
+//     let arrayComen = comen.split('');
+//     if (arrayComen.length < 50){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+// console.log(validarComen("1234 67 90 23456789012 4567")); // true
+// console.log(validarComen("1234 67 90 23456789012 45678 01234567890 234 678901")); // false
+
+
+// let validapass = (pass) => {
 //     let minusculas = 'abcdefghyjklmnñopqrstuvwxyz'.split('');
-//     let mayusculas = 'ABCDEFGHIJKLMNÑOPQSTUVVXYZ'.split('');
+//     let mayusculas = 'abcdefghyjklmnñopqrstuvwxyz'.toUpperCase().split('');
+// 	let digito = '0123456789'.split('');
 
 //     let verificar = false;
 //     if (pass.length < 6)
 //         return false;
 //     else {
+
 //         for (let i = 0; i < pass.length; i++) {
 //              if (minusculas.includes(pass[i])){
-//                 verificar = true;
+//                  verificar = true;
 //                  break;
 //              }
 //         }
@@ -263,13 +286,27 @@
 //                     break;
 //                 }
 //             }
-
-//             if (!verificar)
-//                 return false;
-//             else
-//                 return true;
+			
+// 			if (!verificar) {
+// 				return false;
+// 			} else{
+// 				verificar = false;
+// 				for (let i = 0; i < pass.length; i++) {
+// 					if (digito.includes(pass[i])) {
+// 						verificar = true;
+// 						break;
+// 					}
+// 				}
+// 				if (!verificar)
+// 					return false;
+// 				else
+// 					return true;
+				
+// 			}
 //         }
 //     }
+
+
 // };
 
-// console.log(validarPass('fF3456'))
+// console.log(validapass('aAbBcCdD1234'))

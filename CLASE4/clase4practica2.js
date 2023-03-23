@@ -97,13 +97,28 @@
 // Recordá usar una sola vez console.log() para ver la posición final del auto. ¿Qué deberías indicar dentro de los paréntesis 
 // de console.log() para ver la posición final del auto?
 
-let coche = {
-    marca: 'Ford',
-    modelo: 'Focus',
-    anio: 2018,
-    color: 'Rojo',
-    posicion: 0,
-}
+// let auto = {
+//     marca: 'Ford',
+//     modelo: 'Focus',
+//     anio: 2018,
+//     color: 'Rojo',
+//     posicion: 0,
+//     avanzar(n1) {
+//         if(n1 > 0) {
+//             this.posicion += n1;
+//         }
+//     },
+//     retroceder(n2) {
+//         if(n2 > 0) {
+//             this.posicion -= n2;
+//         }
+//     }
+// };
+
+// auto.avanzar(7);
+// console.log(auto.posicion);
+// auto.retroceder(2);
+// console.log(auto.posicion);
 
 
 
@@ -113,6 +128,21 @@ let coche = {
 // retroceder(n) por un único método moverse(n) que va a recibir como parámetro un número positivo o negativo y modificará la 
 // posición del auto la cantidad de pasos necesarios. 
 // Probá mover el auto usando el método moverse(n).
+
+// const nuevoAuto = {
+//     marca: 'Ford',
+//     modelo: 'Focus',
+//     anio: 2018,
+//     color: 'Rojo',
+//     posicion: 0,
+//     moverse(n) {
+//         this.posicion += n;
+//     }
+// };
+
+// nuevoAuto.moverse(10);
+// nuevoAuto.moverse(-9);
+// console.log(nuevoAuto.posicion); 
 
 
 
@@ -143,6 +173,34 @@ let coche = {
 // Por ejemplo:
 // console.log(ironMan.getPoder(Math.floor(Math.random()*3)))
 
+// const ironMan = {
+//     nombre: "Iron Man",
+//     equipo: "Avengers",
+//     poderes: ["Volar", "Lanzar misiles", "Disparar láser"],
+//     energia: 100,
+//     getPoder(n1) {
+//       const poderElegido = this.poderes[n1];
+//       this.energia -= (10 * n1);
+//       return `Poder Elegido de ${this.nombre}: ${poderElegido}. Energía restante: ${this.energia}.`;
+//     }
+// };
+
+  
+//   const hulk = {
+//     nombre: "Hulk",
+//     equipo: "Avengers",
+//     poderes: ["Aplastar", "Gritar", "Golpear"],
+//     energia: 100,
+//     getPoder(n2) {
+//       const poderElegido = this.poderes[n2];
+//       this.energia -= (10 * n2);
+//       return `Poder Elegido de ${this.nombre}: ${poderElegido}. Energía restante: ${this.energia}.`;
+//     }
+// };
+  
+// console.log(ironMan.getPoder(Math.floor(Math.random()*3)))
+// console.log(hulk.getPoder(Math.floor(Math.random()*3)))
+
 
 
 // ########################################################################################################################################
@@ -150,9 +208,35 @@ let coche = {
 // 8. Crea un objeto literal producto con las siguientes propiedades:
 // ● nombre
 // ● precio
-// ● stock Implementa los siguientes métodos en el objeto producto:
+// ● stock 
+
+//Implementa los siguientes métodos en el objeto producto:
 // ● vender(cantidad): recibe una cantidad como parámetro y disminuye el stock del producto en esa cantidad. Si la cantidad es mayor 
 //                     al stock disponible, muestra un mensaje de error.
 // ● agregarStock(cantidad): recibe una cantidad como parámetro y aumenta el stock del producto en esa cantidad.
 
 // Prueba agregar y quitar stock utilizando los métodos correspondientes y muestra en consola el stock actualizado.
+
+// const objeto = {
+//     nombre: "Objeto",
+//     precio: 500,
+//     stock: 10,
+//     vender(cantidad) {
+//       if (cantidad > this.stock) {
+//         console.log(`No tenemos tanto stock para vender, solamente tenemos ${this.stock}.`);
+//       } else {
+//         this.stock -= cantidad;
+//       }
+//     },
+//     agregarStock(cantidad) {
+//       this.stock += cantidad;
+//     }
+//   };
+  
+//   console.log(objeto.stock);
+//   objeto.vender(2);
+//   console.log(objeto.stock);
+//   objeto.vender(2);
+//   console.log(objeto.stock);
+//   objeto.agregarStock(7);
+//   console.log(objeto.stock);
