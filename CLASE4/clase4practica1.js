@@ -240,11 +240,24 @@
 
 
 // let validarEmail = (email) => {
-//     const arroba = /@/;
-//     return arroba.test(email);
+//     if (email.includes('@')){
+//         return `Email correcto`;
+//     }else {
+//         return `Email incorrecto`;
+//     }
 // }
-// console.log(validarEmail("alberto@correo.com")); // true
-// console.log(validarEmail("albertocorreo.com")); // false
+
+// console.log(validarEmail("alberto@correo.com")); 
+// console.log(validarEmail("albertocorreo.com")); 
+
+// OTRA FORMA
+//let validarEmail = (email) => email.includes('@') ? `Email CORRECTO` : `Email INCORRECTO`;
+
+//OTRA FORMA
+// const regexValidateEmail = /\S+@\S+\.\S+/
+// console.log(regexValidateEmail.test('alberto@correo.com'))
+
+
 
 
 // const validarComen = (comen) => {
@@ -262,7 +275,7 @@
 // let validapass = (pass) => {
 //     let minusculas = 'abcdefghyjklmnñopqrstuvwxyz'.split('');
 //     let mayusculas = 'abcdefghyjklmnñopqrstuvwxyz'.toUpperCase().split('');
-// 	let digito = '0123456789'.split('');
+// 	   let digito = '0123456789'.split('');
 
 //     let verificar = false;
 //     if (pass.length < 6)
@@ -305,8 +318,13 @@
 // 			}
 //         }
 //     }
-
-
 // };
 
 // console.log(validapass('aAbBcCdD1234'))
+
+// OTRA FORMA
+
+// const validapass = pass => {
+//     const regexvalidapass = /^(?=*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/
+//     return regexvalidapass.test(pass) ? "Clave CORRECTA" : "Clave INCORRECTA"
+// }
