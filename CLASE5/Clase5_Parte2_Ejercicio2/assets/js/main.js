@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // alert("hola")
+    // alert("hola Abracadabra")
     // Evento para el botón Abracadabra
     const abracadabraButton = document.getElementById('abracadabra');
     abracadabraButton.addEventListener('click', function() {
@@ -14,11 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
   
     getInTouchButton.addEventListener('dblclick', function() {
       parrafoColor.style.color = colorAlAzar();
+      // parrafoColor.style.color = 'red';
     });
   
     // Función colorAlAzar
     function colorAlAzar() {
-      const colores = ['red', 'blue', 'green', 'purple', 'orange'];
+      const colores = ['red', 'blue', 'green', 'brown', 'orange'];
       const index = Math.floor(Math.random() * 5);
       return colores[index];
     }
@@ -28,19 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach(function(section) {
       section.addEventListener('click', function() {
         const h3 = this.querySelector('h3');
-        alert('Clickeaste sobre ' + h3.innerText);
+        alert('Clickeaste sobre "' + h3.innerText +'".');
       });
     });
   
     // Eventos para el botón See some of my recent work
     const seeRecentWorkButton = document.querySelector('#work .button.big.scrolly');
-    const workParagraph = document.querySelector('#work > header > p');
+    // const workParagraph = document.querySelector('#work > header > p');
+    const workParagraph = document.querySelector('#work > footer > p');
     let originalColor = workParagraph.style.color;
   
-    console.log(seeRecentWorkButton)
-    console.log(workParagraph)
+    // console.log(seeRecentWorkButton)
+    // console.log(workParagraph)
 
     seeRecentWorkButton.addEventListener('mouseover', function() {
+    // seeRecentWorkButton.addEventListener('mouseenter', function() {
       originalColor = workParagraph.style.color;
       workParagraph.style.color = colorAlAzar();
     });
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
       alert("Preparate para el futuro...");
       setTimeout(function() {
         alert("Y el futuro ya llegó!");
-      }, 5000);
+      }, 3000);
     });
 
     // al tocar una tecla
@@ -62,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //   alert("Ey, tocaste el teclado!");
     // });
 
+    // al tocar la barra espaciadora
     // document.addEventListener("keydown", function(event) {
     //   if (event.code === "Space") {
     //     alert("Ey, tocaste la barra!");
