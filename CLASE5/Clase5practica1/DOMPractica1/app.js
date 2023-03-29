@@ -1,10 +1,5 @@
 'use strict'
 
-// const titulo1 = document.querySelector ('h1')
-// console.log(titulo1);
-// titulo1
-
-
 // ########################################################################################################################################
 // ########################################################################################################################################
 // 
@@ -15,10 +10,21 @@
 // 
 // a. Mediante un alert mostrar el saludo de bienvenida: "Bienvenidos a mi sitio.".
 
+alert('Bienvenidos a mi sitio.');
+
 // b. Usá un confirm para preguntar: “¿Está seguro de querer avanzar?”.
 //    i. En el caso que quiera continuar mostrar en el <h2> el mensaje "Qué alegría que quieras continuar tu visita”.
 //    ii. En caso que no quiera avanzar debe modificarse el <h2> con el mensaje "Lamentamos que no quieras continuar tu visita” y
 //        no debería seguir el flujo de la aplicación. Es decir, ya no deberían ejecutarse más puntos de esta práctica.
+
+let confirmacion = confirm('¿Estás seguro de querer avanzar?')
+
+const mensajeBienvenida = document.querySelector('.bienvenida h2')
+if(confirmacion){
+    mensajeBienvenida.innerText = 'Qué alegría que quieras continuar tu visita'
+} else {
+    mensajeBienvenida.innerText = 'Lamentamos que no quieras continuar tu visita'
+}
 
 // c. Con un prompt pedí al usuario ingrese su nombre y guardalo en una variable.
 
